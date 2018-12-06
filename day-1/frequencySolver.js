@@ -8,11 +8,7 @@ const findCurrentFrequency = frequencies => {
   let currentFrequency = 0;
 
   frequencies.forEach(frequency => {
-    if (frequency.indexOf(`+`) !== -1) {
-      currentFrequency += parseInt(frequency);
-    } else {
-      currentFrequency += parseInt(frequency);
-    }
+    currentFrequency += parseInt(frequency);
   });
   return currentFrequency;
 };
